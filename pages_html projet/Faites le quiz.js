@@ -80,7 +80,7 @@ const quizData = [
         correct: "c",
     }
 ];
-const quiz= document.getElementById('Faites le quiz')
+const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
 const a_text = document.getElementById('a_text')
@@ -114,7 +114,7 @@ function deselectAnswers() {
 function getSelected() {
     let answer
     answerEls.forEach(answerEl => {
-        if(answerEl.checked) {
+        if (answerEl.checked) {
             answer = answerEl.id
         }
     })
@@ -124,19 +124,19 @@ function getSelected() {
 
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
-    if(answer) {
-       if(answer == quizData[currentQuiz].correct) {
-           score++
-       }
-       currentQuiz++
-       if(currentQuiz < quizData.length) {
-           loadQuiz()
-       } else {
-           quiz.innerHTML = `<h2>You answered ${score}/${quizData.length} questions correctly</h2><button onclick="location.reload()">Reload</button>`;
-           quizData.forEach(element => {
-            correctanswer=element.correct=="a"? element.a :element.correct=="b"? element.b :element.correct=="c"? element.c: element.d;
-            answersTable.insertAdjacentHTML("beforeend",'<th class=\"tableContent\">'+element.question+'</th><th class=\"tableContent\">'+correctanswer+'</th>');
-        });
+    if (answer) {
+        if (answer == quizData[currentQuiz].correct) {
+            score++
+        }
+        currentQuiz++
+        if (currentQuiz < quizData.length) {
+            loadQuiz()
+        } else {
+            quiz.innerHTML = `<h2>You answered ${score}/${quizData.length} questions correctly</h2><button onclick="location.reload()">Reload</button>`;
+            quizData.forEach(element => {
+                correctanswer = element.correct == "a" ? element.a : element.correct == "b" ? element.b : element.correct == "c" ? element.c : element.d;
+                answersTable.insertAdjacentHTML("beforeend", '<th class=\"tableContent\">' + element.question + '</th><th class=\"tableContent\">' + correctanswer + '</th>');
+            });
             answersTable.insertAdjacentHTML("afterbegin", "<th class=\"tableHeader\">Question</th><th class=\"tableHeader\">Correct Answer</th>");
         }
     }
