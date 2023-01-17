@@ -152,9 +152,9 @@ footer{
   }
   button{
     background-color: beige;
-    color: rgb(5, 5, 37)
+    color: rgb(5, 5, 37);
     display: block;
-    width: 100%;
+    width : 100%;
     cursor: pointer;
     font-size: 1.1rem;
     font-family: inherit;
@@ -181,4 +181,15 @@ footer{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 200;
     color: black;
+}
+#valider{
+    background-color: beige;
+    color: black;
+    width: 150px;
+text-align: center;
+    height: 70px;
+    display: block;
+    margin-left: 600px;
+    margin-top: 20px;
+
 }
