@@ -1,0 +1,184 @@
+*{
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+html{
+    margin:0;
+}
+header{
+    background-color: beige;
+    width: 100%;
+    font-weight: bold;
+    font-family: serif,fantasy;
+    color:rgb(21, 80, 40);
+    text-align: center;
+
+}
+header h1{
+    font-family: serif;
+}
+
+nav a{
+    color: rgb(21, 80, 40);
+    font-family: serif,fantasy;
+    font-weight: 700;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+main{
+    padding: 10px;
+    margin: 10px;
+    border: 1px;
+}
+main{
+    background-color: beige;
+    color: black;
+}
+main h2{
+    font-family: serif,fantasy;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    text-align: right;
+    line-height: 17px;
+    margin: top 35px;
+    background-position: top;
+    text-align: center;
+}
+main h3{
+font-family: serif,fantasy;
+text-align: center;
+float: none;
+} 
+a:hover{
+    text-align: none;
+    color: black;
+    text-shadow: none;
+}
+.arrondie{
+    -moz-border-radius: 50px 0px;
+-webkit-border-radius: 50px 0px;
+border-radius: 50px; 
+float: left;
+}
+p{
+    font-family: serif;
+    font-size: larger;
+}
+footer{
+    font-family: serif;
+    background-color: burlywood;
+    text-align: center;
+}
+#ident{
+    float: right;
+}
+#parcours1{
+    text-align: left;
+    font-family: serif,fantasy;
+    margin-right: 10px;
+}
+.contact {
+    text-align: center;
+    font-size: larger;
+    color: rgb(21, 80, 40);
+}
+.adresse2{
+    margin-top: 200px;
+}
+#comp{
+    text-align: center;
+    color:rgb(235, 43, 43);
+    font-family: serif;
+    font-size: x-large;
+    margin: 40px;
+    padding-right: 10px;
+}
+.compet{
+    font-family: 'Signika Negative', sans-serif;
+    text-align:center;
+    font-weight: 500;
+}
+.compet1{
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+}
+.compet2{
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+}
+#tableau{
+    align-items: flex-start;
+    width: 300px;
+}
+.alignement{
+    text-align: left;
+    margin-left: 20px;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 300;
+}
+
+.quiz-container{
+    background-color:beige;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px beige;
+   text-align: center;
+   background-color: beige;
+  }
+  .quiz-header{
+   margin: 100px;
+   margin-top: 50px;
+  }
+  h2{
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+  }
+  ul{
+    list-style-type: none;
+    padding: 0;
+  }
+  ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  button{
+    background-color: beige;
+    color: rgb(5, 5, 37)
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+}
+  button:hover{
+    background-color:burlywood;
+  }
+  button:focus{
+    outline: none;
+    background-color: #348b1e;
+  }
+  .tableHeader{
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: x-large;
+}
+.tableContent{
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size:large ;
+}
+.compet3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    color: black;
+}
